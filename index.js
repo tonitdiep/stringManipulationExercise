@@ -8,7 +8,7 @@ var commonChars = function(words) {
             finalArray.push(charString)
     
             words = words.map(x => x.replace(charString, ""))
-                    // console.log("line11", words, finalArray, charString)
+                    console.log("line11", words, finalArray, charString)
         }
     })
     return finalArray
@@ -16,7 +16,7 @@ var commonChars = function(words) {
 
 }
 
-// console.log(commonChars(words = ["bella","label","roller"]))
+console.log(commonChars(words = ["bella","label","roller"]))
 /*
 Leetcode: find common characters
 
