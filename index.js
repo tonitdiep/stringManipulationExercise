@@ -1,9 +1,22 @@
 var commonChars = function(words) {
 
-  
+   let finalArray = [];
+    let filterWordArray =  [...words[0].split('')]
+    console.log(filterWordArray)
+    filterWordArray.forEach(charString => {
+        if(words.every(item => item.includes(charString))){
+            finalArray.push(charString)
+    
+            words = words.map(x => x.replace(charString, ""))
+                    // console.log("line11", words, finalArray, charString)
+        }
+    })
+    return finalArray
+    
+
 }
 
-
+// console.log(commonChars(words = ["bella","label","roller"]))
 /*
 Leetcode: find common characters
 
